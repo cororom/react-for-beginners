@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import Theme from "./Theme";
 import styles from "./Nav.module.css";
@@ -8,9 +9,9 @@ function NavHomePc() {
       <div className={styles.header__layout}>
         <ul className={styles.header__menu}>
           <li className={[styles.menu__item, styles.menu__logo].join(" ")}>
-            <a href="/">
+            <Link to="/">
               <h1 className={styles.logo}>NFLEX</h1>
-            </a>
+            </Link>
           </li>
           <li className={[styles.menu__item, styles.menu01].join(" ")}>
             <span>TOP</span>
@@ -79,9 +80,9 @@ function NavDetailPc() {
       <div className={styles.header__layout}>
         <ul className={styles.header__menu}>
           <li className={[styles.menu__item, styles.menu__logo].join(" ")}>
-            <a href="/">
+            <Link to="/">
               <h1 className={styles.logo}>NFLEX</h1>
-            </a>
+            </Link>
           </li>
           <li className={[styles.menu__item, styles.menu01].join(" ")}>
             <span>TOP</span>
